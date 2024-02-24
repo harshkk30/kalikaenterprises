@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adani Enterprises Menu</title>
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Style for the menu bar */
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #012169;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* Style for the menu items */
+        .menu li {
+            margin: 0 15px;
+        }
+
+        /* Style for the menu item links */
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Change the color of links when hovered */
+        .menu li a:hover {
+            background-color: #31517C;
+            border-radius: 10px;
+        }
+
+        /* Style for the icon */
+        .menu li .fa-bars {
+            display: none;
+        }
+
+        /* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            .menu li {
+                margin: 0;
+            }
+            .menu li:not(:first-child) {
+                display: none;
+            }
+            .menu li .fa-bars {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu bar -->
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Businesses</a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <!-- Icon for smaller screens -->
+        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+
+    <!-- Content of your website goes here -->
+
+</body>
+</html>
